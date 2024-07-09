@@ -26,8 +26,96 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
+
+body.defaultCursor {
+  cursor: default;
+}
+
+body.Banana {
+  cursor: url('/custom-cursors/dancingBanana/frame_0_delay-0.01s.png'), auto;
+  -webkit-animation: Banana 800ms infinite;
+  animation: Banana 800ms infinite;
+}
+
+body.Penguin {
+  cursor: url('/custom-cursors/dancingPenguin/frame_00_delay-0.01s.png'), auto;
+  -webkit-animation: Penguin 960ms infinite;
+  animation: Penguin 960ms infinite;
+}
+
+body.neonMouse {
+  cursor: url('/custom-cursors/neonMouse/neon-01.png'), auto;
+  -webkit-animation: neonMouse 400ms infinite;
+  animation: neonMouse 400ms infinite;
+}
+
+
+@-webkit-keyframes Banana {
+  0%, 12.5% { cursor: url('/custom-cursors/dancingBanana/frame_0_delay-0.01s.png'), auto; }
+  12.5%, 25% { cursor: url('/custom-cursors/dancingBanana/frame_1_delay-0.01s.png'), auto; }
+  25%, 37.5% { cursor: url('/custom-cursors/dancingBanana/frame_2_delay-0.01s.png'), auto; }
+  37.5%, 50% { cursor: url('/custom-cursors/dancingBanana/frame_3_delay-0.01s.png'), auto; }
+  50%, 62.5% { cursor: url('/custom-cursors/dancingBanana/frame_4_delay-0.01s.png'), auto; }
+  62.5%, 75% { cursor: url('/custom-cursors/dancingBanana/frame_5_delay-0.01s.png'), auto; }
+  75%, 87.5% { cursor: url('/custom-cursors/dancingBanana/frame_6_delay-0.01s.png'), auto; }
+  87.5%, 100% { cursor: url('/custom-cursors/dancingBanana/frame_7_delay-0.01s.png'), auto; }
+}
+
+@keyframes Banana {
+  0%, 12.5% { cursor: url('/custom-cursors/dancingBanana/frame_0_delay-0.01s.png'), auto; }
+  12.5%, 25% { cursor: url('/custom-cursors/dancingBanana/frame_1_delay-0.01s.png'), auto; }
+  25%, 37.5% { cursor: url('/custom-cursors/dancingBanana/frame_2_delay-0.01s.png'), auto; }
+  37.5%, 50% { cursor: url('/custom-cursors/dancingBanana/frame_3_delay-0.01s.png'), auto; }
+  50%, 62.5% { cursor: url('/custom-cursors/dancingBanana/frame_4_delay-0.01s.png'), auto; }
+  62.5%, 75% { cursor: url('/custom-cursors/dancingBanana/frame_5_delay-0.01s.png'), auto; }
+  75%, 87.5% { cursor: url('/custom-cursors/dancingBanana/frame_6_delay-0.01s.png'), auto; }
+  87.5%, 100% { cursor: url('/custom-cursors/dancingBanana/frame_7_delay-0.01s.png'), auto; }
+}
+
+@-webkit-keyframes Penguin {
+  0% { cursor: url('/custom-cursors/dancingPenguin/frame_00_delay-0.01s.png'), auto; }
+  8.33% { cursor: url('/custom-cursors/dancingPenguin/frame_01_delay-0.01s.png'), auto; }
+  16.66% { cursor: url('/custom-cursors/dancingPenguin/frame_02_delay-0.01s.png'), auto; }
+  25% { cursor: url('/custom-cursors/dancingPenguin/frame_03_delay-0.01s.png'), auto; }
+  33.33% { cursor: url('/custom-cursors/dancingPenguin/frame_04_delay-0.01s.png'), auto; }
+  41.66% { cursor: url('/custom-cursors/dancingPenguin/frame_05_delay-0.01s.png'), auto; }
+  50% { cursor: url('/custom-cursors/dancingPenguin/frame_06_delay-0.01s.png'), auto; }
+  58.33% { cursor: url('/custom-cursors/dancingPenguin/frame_07_delay-0.01s.png'), auto; }
+  66.66% { cursor: url('/custom-cursors/dancingPenguin/frame_08_delay-0.01s.png'), auto; }
+  75% { cursor: url('/custom-cursors/dancingPenguin/frame_09_delay-0.01s.png'), auto; }
+  83.33% { cursor: url('/custom-cursors/dancingPenguin/frame_10_delay-0.01s.png'), auto; }
+  91.66% { cursor: url('/custom-cursors/dancingPenguin/frame_11_delay-0.01s.png'), auto; }
+  100% { cursor: url('/custom-cursors/dancingPenguin/frame_00_delay-0.01s.png'), auto; }
+}
+
+@keyframes Penguin {
+  0% { cursor: url('/custom-cursors/dancingPenguin/frame_00_delay-0.01s.png'), auto; }
+  8.33% { cursor: url('/custom-cursors/dancingPenguin/frame_01_delay-0.01s.png'), auto; }
+  16.66% { cursor: url('/custom-cursors/dancingPenguin/frame_02_delay-0.01s.png'), auto; }
+  25% { cursor: url('/custom-cursors/dancingPenguin/frame_03_delay-0.01s.png'), auto; }
+  33.33% { cursor: url('/custom-cursors/dancingPenguin/frame_04_delay-0.01s.png'), auto; }
+  41.66% { cursor: url('/custom-cursors/dancingPenguin/frame_05_delay-0.01s.png'), auto; }
+  50% { cursor: url('/custom-cursors/dancingPenguin/frame_06_delay-0.01s.png'), auto; }
+  58.33% { cursor: url('/custom-cursors/dancingPenguin/frame_07_delay-0.01s.png'), auto; }
+  66.66% { cursor: url('/custom-cursors/dancingPenguin/frame_08_delay-0.01s.png'), auto; }
+  75% { cursor: url('/custom-cursors/dancingPenguin/frame_09_delay-0.01s.png'), auto; }
+  83.33% { cursor: url('/custom-cursors/dancingPenguin/frame_10_delay-0.01s.png'), auto; }
+  91.66% { cursor: url('/custom-cursors/dancingPenguin/frame_11_delay-0.01s.png'), auto; }
+  100% { cursor: url('/custom-cursors/dancingPenguin/frame_00_delay-0.01s.png'), auto; }
+}
+
+
+@-webkit-keyframes neonMouse {
+  0%, 25% { cursor: url('/custom-cursors/neonMouse/neon-01.png'), auto; }
+  25%, 50% { cursor: url('/custom-cursors/neonMouse/neon-02.png'), auto; }
+  50%, 75% { cursor: url('/custom-cursors/neonMouse/neon-03.png'), auto; }
+  75%, 100% { cursor: url('/custom-cursors/neonMouse/neon-04.png'), auto; }
+}
+
+@keyframes neonMouse {
+  0%, 25% { cursor: url('/custom-cursors/neonMouse/neon-01.png'), auto; }
+  25%, 50% { cursor: url('/custom-cursors/neonMouse/neon-02.png'), auto; }
+  50%, 75% { cursor: url('/custom-cursors/neonMouse/neon-03.png'), auto; }
+  75%, 100% { cursor: url('/custom-cursors/neonMouse/neon-04.png'), auto; }
 }
